@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet"href="https://fonts.google.com/share?selection.family=Poppins:wght@300;400;500;600;700">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+    
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images\logo-removebg-preview.png" width="100px" height="65px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="images/">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images\cart.png" width="30px" height="30px">
+                <img src="images\menu.png" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+            </div>
+            
+        </div>
+    
+    <!----------Account page ------->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images\hcam-removebg-preview.png" width="100%">
+                </div>
+                <div>
+                    <h4>Login</h4>
+                    <form>
+                        <form id="loginForm" action="" method="post" >
+                            <input type="text" placeholder="Username" name="username" id="user">
+                            
+                            <input type="password" placeholder="Password" name="password" id="pass">
+                            
+                            <button class="btn" name="logsubmit"    id="login"><a href="index.html">Login</a> </button>
+
+                            <a href="">Forgot Password</a>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-----footer section----->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images\play-store.png">
+                        <img src="images\app-store.png">
+                    </div>
+                    
+                </div>
+                <div class="footer-col-2">
+                    <img src="images\logo.png">
+                    
+                    <p>Our purpose is to sustainably Make the pleasure and Benefits ofSports Accessible
+                        to the Many
+                    </p>
+                    
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                    <li> Coupons</li>
+                    <li> Blog Posts</li>
+                    <li> Return Policy</li>
+                    <li> Join Affiliate</li>
+                    
+                    
+                   </ul>
+                    
+                </div>
+            
+                <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                <li> Facebook</li>
+                <li> Twitter</li>
+                <li> Instagram</li>
+                <li> Youtube</li>
+                
+                
+               </ul>
+                
+            </div>
+                </div>
+       
+                <hr>
+                <p class="copyright">Copyright 2022</p>
+        </div>     
+     
+    </div>
+   
+   
+     
+    
+
+
+
+    
+       
+    </body>
+    <script>
+        function login() {
+          var username = document.getElementById("user").value;
+          var password = document.getElementById("pass").value;
+          
+          // TODO: check username and password against database of valid credentials
+          
+         if(username==="aleena")
+         { alert("Welcome, aleena!");
+    window.location.href = "index.html";
+           
+            
+          
+        }
+    }
+        </script>
+       
+        
+        
+        
+        
+        
+        
+</html>
